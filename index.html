@@ -16,9 +16,224 @@
 
     <div><b>Authors:</b> Chang Han, Weiping Tu, Yuhong Yang, Jingyi Li, Xinhong Li
     </div>
+    
+    
+    <hr style="height:1px;border:none;border-top:1px solid #555555; width:130%">
+    <h2>Part1:Synthetic test dataset</h2>
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tg td {
+            border-bottom-width: 1px;
+            border-color: black;
+            border-style: solid;
+            border-top-width: 1px;
+            border-width: 0px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            border-bottom-width: 1px;
+            border-color: black;
+            border-style: solid;
+            border-top-width: 1px;
+            border-width: 0px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-c3ow {
+            border-color: inherit;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg .tg-0pky {
+            border-color: inherit;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-pcvp {
+            border-color: inherit;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-ihkz {
+            border-color: inherit;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg .tg-7kms {
+            border-color: inherit;
+            font-family: Arial, Helvetica, sans-serif !important;
+            ;
+            text-align: center;
+            vertical-align: top
+        }
+    </style>
+    <h3>Double-talk with clean near-end signal</h3>
+    <table class="tg" style="undefined;table-layout: fixed; width: 493px">
+        <colgroup>
+            <col style="width: 150px">
+            <col style="width: 300px">
+            <col style="width: 300px">
+            <col style="width: 300px">
+            <col style="width: 300px">
+            <col style="width: 300px">
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="tg-c3ow">Model</th>
+                <th class="tg-c3ow">Sample 1</th>
+                <th class="tg-c3ow">Sample 2</th>
+                <th class="tg-c3ow">Sample 3</th>
+                <th class="tg-c3ow">Sample 4</th>
+                <th class="tg-c3ow">Sample 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-pcvp">Microphone signal</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/simu/microphone/f00043_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/simu/microphone/f00059_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/simu/microphone/f00089_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/simu/microphone/f00099_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/simu/microphone/f00331_mic.wav">
+                    </audio></td>
+
+            </tr>
+            <tr>
+                <td class="tg-0pky">Reference signal</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/farend/f00043_farend.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/farend/f00059_farend.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/farend/f00089_farend.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/farend/f00099_farend.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/farend/f00331_farend.wav">
+                    </audio></td>
+            </tr>
+            <tr>
+                <td class="tg-pcvp"Label signal</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/target/f00043_target.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/target/f00059_target.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/target/f00089_target.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/target/f00099_target.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/target/f00331_target.wav">
+                    </audio></td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">AEC-Challenge baseline-22</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/baseline-22/f00043_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/baseline-22/f00059_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/baseline-22/f00089_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/baseline-22/f00099_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/baseline-22/f00331_mic.wav">
+                    </audio></td>
+            </tr>
+           
+           
+            <tr>
+                <td class="tg-0pky">DPCTNet<SUB>sp</SUB>(c<SUB>t</SUB>)</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/ours_ssl/f00043_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/ours_ssl/f00059_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/ours_ssl/f00089_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/ours_ssl/f00099_mic.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/ours_ssl/f00331_mic.wav">
+                    </audio></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    
+    
 
     <hr style="height:1px;border:none;border-top:1px solid #555555; width:130%">
-    <h2>Part1: Blind test by Interspeech AEC-challenge 2021</h2>
+    <h2>Part2: Blind test by Interspeech AEC-challenge 2021</h2>
     <style type="text/css">
         .tg {
             border-collapse: collapse;
